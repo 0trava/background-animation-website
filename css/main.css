@@ -5,10 +5,20 @@
 }
 
 :root {
+   --swiper-theme-color: #4b4d53;
+   --swiper-navigation-size: 30px;
+   --swiper-navigation-sides-offset: 40px; 
+   --swiper-pagination-button: 20px;
+   
 
 }
 
 body {
     background-color: black;
     color: white;
+}
+
+.slider {
+    height: 100vh;
+
 }
