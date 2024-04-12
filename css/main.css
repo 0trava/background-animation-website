@@ -48,8 +48,45 @@ body {
     content: '';
     height: 1px;
     width: 20%;
-    background-color: white;
+    background-color: rgba(255 255 255/ .35);
     position: absolute;
     left: 40%;
     bottom: calc( var(--index) * -1);
+}
+
+.slide__content p {
+    font-size: calc(var(--index) * .9);
+    text-transform: uppercase;
+    letter-spacing: calc(var(--index) * .24);
+    color: rgba(255 255 255/ .8);
+    margin-bottom: calc(var(--index) * 2.6);
+}
+
+.slide__content button {
+    --button-color: rgba(255 255 255/ .9);
+    padding: 9.25px 40px;
+    font-size: 15.25px;
+    border-radius: 10em;
+    background-color: transparent;
+    color: var(--button-color);
+    border: 2px solid var(--button-color);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+
+}
+
+.slider-navigation > * {
+    border: 1.5px solid var(--swiper-theme-color);
+    border-radius: 10em;
+    width: 55px;
+    height: 55px;
+}
+
+.video-background {
+    position: fixed;
+    width: 94%;
+    height: 94%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

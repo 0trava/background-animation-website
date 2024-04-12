@@ -1,3 +1,5 @@
+const video = document.querySelector('.video-background')
+
 const swiperText = new Swiper('.swiper', {
     speed: 1600,
     mousewheel: { },
@@ -9,4 +11,10 @@ const swiperText = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
         nextEl: '.swiper-button-next'
     }
+})
+
+swiperText.originalParams('slideChange', function() {
+    gsap.to(video, 1.6, {
+        currentTime: (video.duration / this.slides.length) * this.realIndex
+    })
 })
